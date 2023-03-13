@@ -48,25 +48,14 @@ module.exports = {
     hardhat: {
       initialBaseFeePerGas: 0,
     },
-    ftmtest: {
-      url: "https://rpc.testnet.fantom.network/",
+    BaseGoerli: {
+      url: "https://goerli.base.org",
       accounts: { mnemonic: mnemonic },
       timeout: 900_000,
       gasPrice: 225000000000,
       gas: 60000000,
       gasLimit: 50000000,
       gasMultiplier: 40,
-    },
-    AvaxTest: {
-      url: "https://api.avax-test.network/ext/bc/C/rpc",
-      accounts: { mnemonic: mnemonic },
-      // gas: 600000000,
-      // gasMultiplier: 2.5,
-      // confirmations: 3,
-      // gasPrice: 25000000000,
-      chainId: 43113,
-      timeout: 300_000,
-      gasLimit: 25000000000,
     },
     dashboard: {
       url: "http://localhost:24012/rpc",
